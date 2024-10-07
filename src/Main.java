@@ -39,12 +39,12 @@ public class Main {
                 .forEach(n -> System.out.print(n + " "));
         System.out.println();
 
-        List<Integer> filtNums = nums.stream()
+        List<Integer> filterNums = nums.stream()
                 .filter(n -> n % 2 == 1)
                 .sorted()
                 .map(n -> n*n)
                 .collect(Collectors.toList());
-        System.out.println(filtNums);
+        System.out.println(filterNums);
         System.out.println();
 
         // Reduce - example - to do sum of squares
